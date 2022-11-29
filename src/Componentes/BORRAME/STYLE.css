@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+body{
+    font-family: Comfortaa;
+}
+
+/* ---Colapsar modulos para concentracion de trabajo--- */
+/* header{display: none !important;} */
+/* .seccion1-looks{display: none !important;} */
+/* .seccion2-ofertas{display: none !important;} */
+/* .seccion3-misc{display: none !important;} */
+/* .seccion4-contato{display: none !important;} */
+/* footer{display: none !important;} */
+
+
+/* Edicion de botones */
+
+
+
+
+
+
+/*____________________________________________________________________________________________________*/
+header{
+    margin: 20px 0;
+    /* height: 100vh; */
+}
+.redes-sociales > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+.fa-brands, .fa-solid{
+    color: #c7c7c7;
+    padding: 0 5px;
+}
+.titulo{
+    text-align: center;
+    letter-spacing: 0.25em;
+    margin-bottom: 50px;
+}
+.titulo1{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+.titulo2{
+    font-size: 13px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+.titulo3{
+    font-size: 9px;
+    font-weight: 300;
+}
+.navbar{
+    display: none;
+}
+.burger-menu{
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    z-index: 2;
+}
+.cart-menu{
+    position: fixed;
+    right: 15px;
+    top: 70px;
+}
+.burger-links{
+    display: none;
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.25em;
+    z-index: 1;
+    padding: 40px 20px;
+    transition: all 650ms ease-in-out;
+    -webkit-transition: all 650ms ease-in-out;
+}
+.burger-links > li{
+    padding: 10px 0;
+}
+
+
+/*____________________________________________________________________________________________________*/
+.intro-slide > a{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.intro-slide > a > img{
+    /* display: none; */
+    -webkit-transition: all 650ms ease-in-out;
+    transition: all 650ms ease-in-out;
+    max-width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+}
+.look, .ofertas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.look-img{
+    width: 100vw;
+}
+.look-titulo{
+    font-size: 24px;
+    position: relative;
+    bottom: 25px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-weight: 200;
+}
+.comprar, .oferta{
+    font-size: 25px;
+    color: #6c78ab;
+    border: #6c78ab solid 1px; 
+    border-radius: 50px;
+    padding: 5px;
+    width: 180px;
+    height: 40px;
+}
+.comprar:hover, .oferta:hover{
+    background-color: #6C78AB;
+    color: #ffffff;
+    transition: all 0.2s ease, visibility 0s;
+}
+
+
+/*____________________________________________________________________________________________________*/
+.ofertas{
+    transition: all 0.4s ease-in-out 0s;
+}
+.ofertas > img{
+    width: 100vw;
+    border-radius: 999px;
+    overflow: hidden;
+}
+.oferta-titulo{
+    font-size: 34px;
+    font-weight: 200;
+    padding: 50px;
+    font-stretch: 50%;
+}
+.ofertas > p{
+    font-size: 20px;
+}
+.oferta{
+    margin: 20px 0;
+}
+
+
+
+/*____________________________________________________________________________________________________*/
+.seccion3-misc{
+    margin-bottom: 30px;
+}
+.seccion3-misc > span{
+    display: inline-block;
+    border-top: 1px solid #e8e6e6 ;
+    width: 80vw;
+    /* margin-left: 10vw; */
+    margin-bottom: 20px;
+}
+.misc{
+    display: flex;
+    align-items: center;
+    margin: 20px 10vw;
+}
+.misc > img, .misc > i{
+    width: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: #6C78AB;
+}
+.misc-info > :nth-child(n){
+    padding: 10px;
+}
+.fa-chevron-right{
+    padding-right: 5px;
+}
+
+
+/*____________________________________________________________________________________________________*/
+.seccion4-contato{
+    background-color: #c0cbed;
+    /* border-top: 10px double black; */
+}
+.seccion4-contato > span {
+    display: block;
+    width: 100vw;
+    height: 6px;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    background-color: #e8e6e6;
+    box-shadow: inset 0px -1px 2px rgb(0, 0, 0, 0.5);
+}
+.contacto{
+    text-align: center;
+    padding: 20px 0;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.form > input, .form > textarea{
+    align-items: center;
+    width: 95vw;
+    resize: vertical;
+    font-size: 12px;
+    padding: 5px;
+    border: 0px;
+    margin: 8px 0;
+}
+.div-button{
+    display: flex;
+    justify-content: flex-end;
+    width: 95vw;
+}
+.enviar-button{
+    background-color: #c7c7c7;
+    color: #ffffff;
+    border: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    width: 40px;
+    height: 26px;
+}
+
+
+
+/*____________________________________________________________________________________________________*/
+footer{
+    background-color: #8f96b3;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+.redes-sociales-footer{
+    height: 100%;
+}
+
+
+
+
+/*____________________________________________________________________________________________________*/
+@media (min-width:768px){
+    .seccion1-looks{
+        margin: 0 10vw;
+    }
+    .this-img{
+        width: 80vw !important;
+    }
+}
+
+
+
+/*____________________________________________________________________________________________________*/
+@media(min-width:1024px){
+    .burger-menu, .burger-links{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 20vw;
+    }
+    .cart-menu {
+        position: fixed;
+        right: 15px;
+        top: 210px;
+    }
+    
+    
+}
