@@ -14,13 +14,13 @@ function App() {
     <div className="App">
       < Header />
 
-      {/* < Seccion1 /> */}
-      {/* < Seccion2 /> */}
-      {/* < Seccion3 /> */}
-      {/* < Seccion4 /> */}
+      < Seccion1 />
+      < Seccion2 />
+      < Seccion3 />
+      < Seccion4 />
 
       < Contacto />
-      {/* < Footer /> */}
+      < Footer />
 
     </div>
   );
