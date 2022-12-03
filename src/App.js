@@ -1,28 +1,40 @@
 import './App.css';
-import './Componentes/BORRAME/STYLE.css';
+import './Componentes/STYLES/STYLE.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Home from './Componentes/Home/Home';
+import Nina from './Componentes/Routes/Nina/Nina';
+import Nino from './Componentes/Routes/Nino/Nino';
+import Accesorios from './Componentes/Routes/Accesorios/Accesorios';
 
 import Header from './Componentes/Header/Header';
-import Seccion1 from './Componentes/Main/Seccion1/Seccion1';
-import Seccion2 from './Componentes/Main/Seccion2/Seccion2';
-import Seccion3 from './Componentes/Main/Seccion3/Seccion3';
-import Seccion4 from './Componentes/Main/Seccion4/Seccion4';
 import Contacto from './Componentes/Contacto/Contacto';
-// import Footer from './Componentes/Footer/Footer';
+import Footer from './Componentes/Footer/Footer';
+
+import { BrowserRouter } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      < Header />
 
-      < Seccion1 />
-      < Seccion2 />
-      < Seccion3 />
-      < Seccion4 />
+    <BrowserRouter>
+      <div className="App">
+        < Header />
 
-      < Contacto />
-      < Footer />
 
-    </div>
+        <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/bebe-nina' element={<Nina/>}/>
+        <Route path='/bebe-nino' element={<Nino/>}/>
+        <Route path='/accesorios' element={<Accesorios/>}/>
+        </Routes>
+
+
+        < Contacto />
+        < Footer />
+
+      </div>
+    </BrowserRouter>
   );
 }
 

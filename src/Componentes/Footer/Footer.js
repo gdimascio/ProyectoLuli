@@ -1,9 +1,6 @@
 import React from "react";
-import './Footer.css';
-// import 'https://proy-luli.netlify.app/public/css/style.css';
-// import {Route, Routes} from "react-router-dom";
-import { Link, NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { Link, NavLink } from 'react-router-dom';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const Footer = () => {
@@ -12,20 +9,21 @@ const Footer = () => {
         <div className="redes-sociales redes-sociales-footer">
             <ul>
                 <li>
-                    <a href="/" className="facebook"><FontAwesomeIcon icon="fa-brands fa-facebook"/>
-                        Facebook
+                    {/* <NavLink to="/" className="facebook">
+                        <i className="fa-brands fa-facebook">facebook</i>
+                    </NavLink> */}
+                    <a href="/" className="facebook">
+                        <i className="fa-brands fa-facebook">facebook</i>
                     </a>
                 </li>
-
                 <li>
-                    <a href="/" className="mail"><FontAwesomeIcon icon="fa-solid fa-envelope"/>
-                        Mail
+                    <a href="/" className="mail">
+                        <i className="fa-solid fa-envelope">mail</i>
                     </a>
                 </li>
-
                 <li>
-                    <a href="/" className="instagram"><FontAwesomeIcon icon="fa-brands fa-instagram-square"/>
-                        instagram
+                    <a href="/" className="instagram">
+                        <i className="fa-brands fa-instagram-square">instagram</i>
                     </a>
                 </li>
             </ul>
@@ -33,5 +31,4 @@ const Footer = () => {
     </footer>
     )
 }
-
 export default Footer;
