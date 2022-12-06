@@ -1,11 +1,12 @@
 import './App.css';
 import './Componentes/STYLES/STYLE.css';
+import './Componentes/STYLES/STYLEconjunto.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './Componentes/Home/Home';
 import Nina from './Componentes/Routes/Nina/Nina';
 import Nino from './Componentes/Routes/Nino/Nino';
-import Accesorios from './Componentes/Routes/Accesorios/Accesorios';
+// import Accesorios from './Componentes/Routes/Accesorios/Accesorios';
 
 import Header from './Componentes/Header/Header';
 import Contacto from './Componentes/Contacto/Contacto';
@@ -26,7 +27,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/bebe-nina' element={<Nina/>}/>
         <Route path='/bebe-nino' element={<Nino/>}/>
-        <Route path='/accesorios' element={<Accesorios/>}/>
+        {/* <Route path='/accesorios' element={<Accesorios/>}/> */}
         </Routes>
 
 

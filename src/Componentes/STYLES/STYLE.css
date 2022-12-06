@@ -10,6 +10,9 @@
 body{
     font-family: Comfortaa;
 }
+a{
+    text-decoration: none !important;
+}
 
 /* ---Colapsar modulos para concentracion de trabajo--- */
 /* header{display: none !important;} */
@@ -37,7 +40,7 @@ header{
     justify-content: center;
     align-items: center;
     height: 100%;
-
+    padding: 0;
 }
 .fa-brands, .fa-solid{
     color: #c7c7c7;
@@ -46,7 +49,7 @@ header{
 .titulo{
     text-align: center;
     letter-spacing: 0.25em;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .titulo1{
     font-size: 28px;
@@ -66,7 +69,7 @@ header{
 .navbar{
     display: none;
 }
-.burger-menu{
+.burger-menu, .navbar-toggler{
     position: fixed;
     top: 30px;
     right: 20px;
@@ -138,6 +141,7 @@ header{
     padding: 5px;
     width: 180px;
     height: 40px;
+    line-height: 1;
 }
 .comprar:hover, .oferta:hover{
     background-color: #6C78AB;
@@ -182,7 +186,7 @@ header{
     margin-bottom: 20px;
 }
 .misc{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     margin: 20px 10vw;
 }
@@ -287,11 +291,27 @@ footer{
         justify-content: space-evenly;
         margin: 0 20vw;
     }
+    .navbar-collapse{
+        flex-direction: column !important;
+    }
     .cart-menu {
         position: fixed;
         right: 15px;
         top: 210px;
     }
-    
-    
+    .seccion3-misc > div{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .misc{
+        margin: 0;
+        width: 30vw;
+    }
+    .form > input, .form > textarea, .form-div > input, .form-div > textarea {
+        width: 50vw;
+    }
+    .div-button{
+        width: 0;
+    }
 }

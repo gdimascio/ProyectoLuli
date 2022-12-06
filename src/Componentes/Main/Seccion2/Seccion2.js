@@ -1,24 +1,25 @@
 import React from "react";
 import new_in from '../../../public/img/new_in.png';
 import tejidos from '../../../public/img/tejidos.png';
+import { Link } from "react-router-dom";
 
+
+export function Ofertas({imagen, titulo, descubri, link}) {
+    return (
+        <div className="ofertas">
+            <img src={imagen} alt="" className="this-img"/>
+            <h4 className="oferta-titulo">{titulo}</h4>
+            <p>{descubri}</p>
+            <Link to={link} className="oferta">Descubrir</Link>
+        </div>
+    )
+}
 
 const Seccion2 = () => {
     return (
         <section className="seccion2-ofertas">
-            <div className="new-in ofertas">
-                <img src={new_in} alt="" className="this-img"/>
-                <h4 className="oferta-titulo">New in!</h4>
-                <p>Descubrí los nuevos diseños de esta temporada</p>
-                <a href="/" className="oferta">Descubrir</a>
-            </div>
-
-            <div className="tej-temp ofertas">
-                <img src={tejidos} alt="" className="this-img"/>
-                <h4 className="oferta-titulo">Tejidos de Temporada</h4>
-                <p>Encontrá los tejidos mas lindos, suaves y calentitos</p>
-                <a href="/" className="oferta">Descubrir</a>
-            </div>
+            <Ofertas imagen={new_in} titulo="New in!" descubri="Descubrí los nuevos diseños de esta temporada" link="/"/>
+            <Ofertas imagen={tejidos} titulo="Tejidos de Temporada" descubri="Encontrá los tejidos mas lindos, suaves y calentitos" link="/"/>
         </section>
     )
 }
